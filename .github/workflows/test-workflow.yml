@@ -43,3 +43,8 @@ jobs:
         run : |
           python -m pytest --cov=code/ --cov-report=xml
           coverage report -m
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage
+          path: ./coverage.xml
