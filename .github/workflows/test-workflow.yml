@@ -58,7 +58,7 @@ jobs:
       - uses: actions/checkout@v2
       - run : ls -lrt
       - name : Create Zip
-        run: zip -r code.zip /code
+        run: zip -r code.zip code/
 
 
       - uses: actions/upload-artifact@v2
