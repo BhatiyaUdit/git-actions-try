@@ -1,4 +1,4 @@
-from app import sum_numbers
+from code.app import sum_numbers
 
 
 def test_sum():

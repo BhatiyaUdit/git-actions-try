@@ -41,5 +41,5 @@ jobs:
       - run : pip install -r ./requirements.txt
       - name: Start Testing
         run : |
-          pytest --cov-report=xml
-          coverage report
+          python -m pytest --cov=code/ --cov-report=xml
+          coverage report -m
